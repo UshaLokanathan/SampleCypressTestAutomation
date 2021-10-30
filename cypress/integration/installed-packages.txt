@@ -1,0 +1,4 @@
+1.import 'cypress-file-upload'; in commands.js
+2.import './commands';in index.js
+3.require('cypress-xpath');index.js
+4.file upload plugin
