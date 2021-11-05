@@ -24,3 +24,18 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
+
+Cypress.Commands.add("clickhcaptcha", () => {
+    
+    cy.wait(500);
+    cy.get('.h-captcha > iframe')
+      .then($iframe => {
+        const $body = $iframe.contents().find('body');
+        cy.wrap($body)
+          .find('#checkbox')
+          .should('be.visible')
+          .click();
+      });
+      cy.wait(900);
+
+  });
