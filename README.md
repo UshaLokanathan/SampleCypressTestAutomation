@@ -19,7 +19,7 @@
 <p>Visit the jobs domain (jobs.lever.co) from the Userlane Career page and after submit it checks the response (Return to mainpage button)</p>
 
  <h3>hCaptcha command - Custom Cypress method</h3>  
-<p>This method will be useful when they have many captcha's in the website. </p>
+<p>This method will be useful when we have many captcha's in the website. </p>
 <pre><code>Cypress.Commands.add("clickhcaptcha", () => {
     cy.wait(5000);
     
@@ -32,7 +32,6 @@
           .should('be.visible')
           .click();
       });
-      
       //wait 9seconds to load images
       cy.wait(9000);
   });</code></pre>
