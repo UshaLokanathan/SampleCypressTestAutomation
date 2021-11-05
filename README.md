@@ -9,6 +9,7 @@
 
 <pre><code>git clone https://github.com/UshaLokanathan/SampleCypressTestAutomation.git</code></pre>
 <pre><code>cd SampleCypressTestAutomation</code></pre>
+<pre><code>npm install</code></pre>
 <pre><code>npx cypress open</code></pre>
 
 <h3>Tese Cases </h3>
